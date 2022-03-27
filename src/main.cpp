@@ -1,5 +1,5 @@
 
-#include "automata.h"
+#include "Automata.h"
 #include <iostream>
 using namespace std;
 
