@@ -1,5 +1,5 @@
 
-#include "automata.h"
+#include "Automata.h"
 Automata::Automata() {
 	state = OFF;
 	cash = 0;
