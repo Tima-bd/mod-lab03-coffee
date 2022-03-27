@@ -1,7 +1,7 @@
 // Copyright 2022 GHA Test Team
 
 #include <gtest/gtest.h>
-#include "automata.h"
+#include "Automata.h"
 
 TEST(task1, operation)
 {
