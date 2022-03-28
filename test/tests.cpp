@@ -21,5 +21,5 @@ TEST(task3, operation) {
     Automata coffee;
     coffee.state = CHECK;
     bool ok = coffee.check();
-    EXPECT_EQ(ok, 1);
+    EXPECT_EQ(ok, 0);
 }
