@@ -1,5 +1,4 @@
 // Copyright 2022 UNN-IASR
-#pragma once
 #include "Automata.h"
 using std::cout;
 using std::endl;
