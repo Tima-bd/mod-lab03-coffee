@@ -44,7 +44,7 @@ void Automata::choice(std::string drink) {
         cout << "Error" << endl;
     }
 }
-void Automata::check() {
+bool Automata::check() {
     if (state == CHECK) {
         for (int i = 0; i < menuLen; i++)
             if (menu[i] == choseDrink) {
@@ -52,15 +52,13 @@ void Automata::check() {
                     state = CHECK;
                     cash = cash - prices[i];
                     isEnough = 1;
-                }
-                else {
-                    cout << "not enough money" << endl;
+                } else
                     state = ACCEPT;
-                }
             }
     } else {
         cout << "Error" << endl;
     }
+    return isEnough;
 }
 void Automata::cancel() {
     state = WAIT;
