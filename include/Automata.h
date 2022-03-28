@@ -5,8 +5,7 @@
 using std::string;
 enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 class Automata {
-
-public:
+ public:
     int cash = 0;
     int menuLen = 6;
     std::string menu[6] = {
@@ -29,7 +28,7 @@ public:
     void etMenu();
     STATES getState();
     void choice(std::string drink);
-    void check();
+    bool check();
     void cancel();
     void cook();
     void finish();
