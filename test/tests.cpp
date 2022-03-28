@@ -20,6 +20,6 @@ TEST(task2, operation) {
 TEST(task3, operation) {
     Automata coffee;
     coffee.state = CHECK;
-    coffee.check();
-    EXPECT_EQ(isEnough, 1);
+    bool ok = coffee.check();
+    EXPECT_EQ(ok, 1);
 }
