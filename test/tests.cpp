@@ -7,14 +7,14 @@ TEST(task1, operation) {
     Automata coffee;
     coffee.state = OFF;
     coffee.on();
-    States ok = coffee.get_state();
-    EXPECT_EQ(Wait, ok);
+    STATES ok = coffee.get_state();
+    EXPECT_EQ(WAIT, ok);
 }
 TEST(task2, operation) {
     Automata coffee;
     coffee.state = COOK;
     coffee.on();
-    States ok = coffee.get_state();
+    STATES ok = coffee.get_state();
     EXPECT_EQ(COOK, ok);
 }
 TEST(task3, operation) {
