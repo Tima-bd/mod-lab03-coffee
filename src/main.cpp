@@ -1,5 +1,4 @@
 // Copyright 2022 UNN-IASR
-#pragma once
 #include "Automata.h"
 #include <iostream>
 #include <string>
