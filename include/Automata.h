@@ -5,23 +5,23 @@
 using std::string;
 enum STATES { OFF, WAIT, ACCEPT, CHECK, COOK };
 class Automata {
-public:
 
+public:
     int cash = 0;
     int menuLen = 6;
     std::string menu[6] = {
-        "cappuchino", 
-        "latte", 
-        "americano", 
-        "tea", 
-        "chocolate", 
+        "cappuchino",
+        "latte",
+        "americano",
+        "tea",
+        "chocolate",
         "fried nails" };
     int prices[6] = {
-        30, 25, 30, 20, 40, 15 
+        30, 25, 30, 20, 40, 15
     };
     STATES state = OFF;
     std::string choseDrink;
-    bool isEnough = 0; 
+    bool isEnough = 0;
     Automata();
     void on();
     void off();
