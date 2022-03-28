@@ -52,8 +52,7 @@ bool Automata::check() {
                     state = CHECK;
                     cash = cash - prices[i];
                     isEnough = 1;
-                } else
-                    state = ACCEPT;
+                }
             }
     } else {
         cout << "Error" << endl;
