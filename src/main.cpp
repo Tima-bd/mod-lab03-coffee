@@ -1,10 +1,13 @@
-
+// Copyright 2022 UNN-IASR
+#pragma once
 #include "Automata.h"
 #include <iostream>
-using namespace std;
+#include <string>
+using std::string;
+using std::cout;
+using std::endl;
 
-int main()
-{
+int main() {
     Automata automat;
     automat.on();
     cout << "automat is waiting" << endl;
